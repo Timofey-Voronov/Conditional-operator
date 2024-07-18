@@ -6,17 +6,25 @@ public static void main(String[] args) {
     int age = 20;
 
     if (age >= 18) {
-    System.out.println("Если возраст человека равен " + age + ", он совершеннолетний");
+    System.out.println("Если возраст человека равен " + age + ", то он совершеннолетний");
     }
     else {
     System.out.println("Если возраст человека равен " + age +
-    ", он не достиг совершеннолетия, нужно немного подождать");
+    ", то он не достиг совершеннолетия, нужно немного подождать");
     }
 
 
     // Задача 2
 
     int temperatureValue = 5;
+
+    if (temperatureValue < 5) {
+        System.out.println("На улице холодно, нужно надеть шапку");
+
+    } else {
+        System.out.println("Сегодня тепло, можно идти без шапки");
+    }
+
 
     if (temperatureValue < 5) {
     System.out.println("На улице " + temperatureValue + " градусов, нужно надеть шапку");
@@ -30,12 +38,12 @@ public static void main(String[] args) {
 
     int speedOfDriver = 60;
 
-    if (speedOfDriver > 60) {
-    System.out.println("Если скорость " + speedOfDriver + ", придется заплатить штраф");
-
+    if (speedOfDriver <= 60) {
+        System.out.println("Если скорость " + speedOfDriver + ", можно ездить спокойно");
     } else {
-    System.out.println("Если скорость " + speedOfDriver + ", можно ездить спокойно");
+        System.out.println("Если скорость " + speedOfDriver + ", придется заплатить штраф");
     }
+
 
 
     // Задача 4
@@ -62,7 +70,7 @@ public static void main(String[] args) {
 
     // Задача 5
 
-    int age3 = 14;
+    int age3 = 10;
 
     if (age3 < 5) {
     System.out.println("Если возраст ребенка равен " + age3 +
@@ -71,11 +79,22 @@ public static void main(String[] args) {
 
     else if (age3 >= 5 && age3 < 14) {
     System.out.println("Если возраст ребенка равен " + age3 +
-    ", можно кататься на аттракционе в сопровождении взрослого. Если взрослого нет, то кататься нельзя");
+    ", можно кататься на аттракционе в сопровождении взрослого");
 
     } else {
     System.out.println("Если возраст ребенка равен " + age3 +
     ", можно кататься на аттракционе без сопровождения взрослого");
+    }
+
+
+    if (age3 < 5) {
+        System.out.println("Если ребенку меньше 5 лет, то он не может кататься на аттракционе");
+    }
+    else if (age3 >= 5 && age3 < 14) {
+        System.out.println("Если ребенку больше 5, но меньше 14 лет, то он может кататься только в сопровождении взрослого." +
+                " Если взрослого нет, то кататься нельзя");
+    } else {
+        System.out.println("Если ребенок старше 14 лет, то он может кататься без сопровождения взрослого");
     }
 
 
@@ -87,7 +106,7 @@ public static void main(String[] args) {
     System.out.println("В вагоне имеются сидячие места");
     }
     else if (quantityOfPassengers > 60 && quantityOfPassengers <= 102) {
-    System.out.println("В вагоне остиль стоячие места");
+    System.out.println("В вагоне остались стоячие места");
     }
     else {
     System.out.println("В вагоне мест нет");
